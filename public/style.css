@@ -1,0 +1,48 @@
+body{
+    background-image: url("../images/index.jpg");
+}
+header{
+    background-color: black;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+hr{
+    background:white;
+    padding: 0;
+}
+.btn{
+    margin-left: 0.5rem;
+}
+.formR{
+    margin: 1rem;
+}
+.registration{
+    float: right;
+    background-color: rgba(128,128,128,0.5);
+    padding: 1rem;
+    margin-right: 1.5rem;
+    margin-top: 3rem;
+    
+}
+.span1{
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color:white;
+}
+.span2{
+    
+    float: right;
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+}
+.quote{
+    color: white;
+    display: inline-block;
+    margin-left: 1.5rem;
+}
+.title{
+    font-family: 'Shrikhand';
+}

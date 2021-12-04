@@ -1,0 +1,16 @@
+.imgLink{
+    margin-left: 15%;
+}
+.btnImg{
+    border-radius: 10%;
+    height: 15%;
+    width: 15%;
+    padding: 0;
+    margin-top: 13%;
+    box-shadow: 10px 10px 5px 5px grey;
+}
+.btnImg:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
