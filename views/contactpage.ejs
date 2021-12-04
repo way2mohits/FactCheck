@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <Title>FastCheck</Title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <%- include("navbar.ejs") -%>
+        <h6>Are you facing any problem?Send us the details<br>Our team will contact you!</h6>
+        
+            <div class="container-fluid">
+                <div class="row mt-3">
+                    <div class="col-md-6 offset-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="text-center text-success">Contact us!</h2>
+                                <form>
+                                    <div class="form-group">
+                                    <label for="exampleFormControlInput1">Your Email address</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" size=50 placeholder="name@example.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Subject</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Subject">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Your Message</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <Title>FastCheck</Title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <%- include("navbar.ejs") -%>
+        <h3><%=success%></h3>
+        <form action="/upload.ejs" method="post">
+            <div class="row form-group">
+                <div class="col">
+                    <label for="firstName">First Name</label>
+                  <input type="text" name="fname" class="form-control" placeholder="First name">
+                </div>
+                <div class="col">
+                    <label for="lastName">Last Name</label>
+                  <input type="text" name="lname" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+            <div class="form-group">
+              <label for="dlNumber">Driving License Number</label>
+              <input type="text" name="dl" class="form-control" id="dlNumber"  placeholder="Driving License Number">
+            </div>
+            <div class="form-group">
+              <label for="rcNumber">RC Number</label>
+              <input type="text" name="rc" class="form-control" id="rcNumber" placeholder="RC Number">
+            </div>
+            <div class="form-group">
+                <label for="vehicleNumber">Vehicle Number</label>
+                <input type="text" name="vehicleNumber" class="form-control" id="vehicleNumber" placeholder="Vehicle Number">
+              </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </body>
+</html>

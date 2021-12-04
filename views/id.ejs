@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <Title>FastCheck</Title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <%- include("navbar.ejs") -%>
+        <% data.forEach(function(item){ %>
+            <%if(item.uid==="-1"){%>
+                <b></b>
+            <%}else{%>
+                <div class="container">
+                    <div class="row p-3">
+                        <div class="col-lg-6">
+                            <div class="card crd-ho">
+                                <div class="card-body">
+                                    <p><h4><b>Vehicle Number:- </b><%= item.vehicleNumber %></h4></p>
+                                    <p><b>Associated UID:- </b><%= item.uid %></p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <%}%>
+
+        <%})%>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>FastCheck</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/home.ejs">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+</nav>
+<% data.forEach(function(item){ %>
+    <%if(item.uid==="-1"){%>
+        <div class="container">
+            <div class="row p-3">
+                <div class="col-lg-6">
+                    <div class="card crd-ho">
+                        <div class="card-body">
+                            <p><h4><b>Vehicle Number:- </b><%= item.vehicleNumber %></h4></p>
+                            <p><b>Associated DL Number </b><%= item.dl %></p>
+                            <p><b>Associated RC Number </b><%= item.rc %></p>
+                            <p><b>ID Associated </b><%= item._id %></p>
+                            <form action="/rto.ejs" method="post">
+                                <div class="row form-group">
+                                    <div class="col">
+                                        <label for="firstName">ID Associated</label>
+                                      <input type="text" name="nid" class="form-control" placeholder="ID">
+                                    </div>
+                                    <div class="col">
+                                        <label for="firstName">UID</label>
+                                      <input type="text" name="uid" class="form-control" placeholder="uid">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <%}%>
+<%})%>

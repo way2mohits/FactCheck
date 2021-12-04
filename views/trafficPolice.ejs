@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>FastCheck</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/home.ejs">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+</nav>
+<div class="container-fluid">
+    <div class="row mt-3">
+        <div class="col-md-6 offset-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="text-center text-success">Contact us!</h2>
+                    <form action="/trafficPolice.ejs" method="post">
+                        <div class="form-group">
+                        <label for="exampleFormControlInput1">Unique ID</label>
+                        <input type="text" class="form-control" name="id" id="exampleFormControlInput1" size=50>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        <div class="row p-3">
+            <div class="col-lg-6">
+                <div class="card crd-ho">
+                    <div class="card-body">
+                        <p><h4><b>Associated Vehicle Number:- </b><%=vehicleNumber %></h4></p>
+                        <p><h4><b>Associated DL Number:- </b><%=dlNumber %></h4></p>
+                        <p><h4><b>Associated RC Number:- </b><%=rcNumber %></h4></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
